@@ -131,6 +131,7 @@ p {
   display: none;
 }
 
+
 @media screen and (max-width: 1240px) {
   body {
     padding: 0 15px;
@@ -150,7 +151,23 @@ p {
   }
 
   .to-top-form {
-    width: 50px;
+    padding: 10px 2px;
+    font-size: 13px;
+  }
+
+  .btn-media, .btn-rate, .btn-top {
+    padding: 7px 8px;
+    margin:  0 5px 5px;
+  }
+
+  .btn-group {
+    padding: 2px;
+    max-width: calc(100% - 4px);
+  }
+
+  .num-of-track {
+    max-width: 100%;
+    padding: 5px;
   }
 
   button.btn-close {
@@ -159,4 +176,11 @@ p {
 }
 
 
-@media screen and (max-width: 560px) {}
+@media screen and (max-width: 680px) {
+  .to-top-form {
+    width: 50px;
+    top: 50%;
+    bottom: auto;
+    transform: translate(0, -50%);
+  }
+}
